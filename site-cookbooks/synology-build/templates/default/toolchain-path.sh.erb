@@ -1,0 +1,14 @@
+#!/bin/sh
+
+TC=/usr/local/<%= @platform %>
+
+CC=$TC/bin/<%= @platform %>-gcc
+CXX=$TC/bin/<%= @platform %>-g++
+LD=$TC/bin/<%= @platform %>-ld 
+AR=$TC/bin/<%= @platform %>-ar 
+RANLIB=$TC/bin/<%= @platform %>-ranlib
+
+CFLAGS="-I$TC/include"
+LDFLAGS="-L$TC/lib"
+
+export CC CXX LD AR RANLIB CFLAGS LDFLAGS
