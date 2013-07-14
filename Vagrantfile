@@ -24,7 +24,7 @@ Vagrant.configure("2") do |config|
     chef.json = {
       'apt' => {
         # uncomment if there is an apt-cache in the local network
-        'cacher_ipaddress' => '192.168.56.5'
+        # 'cacher_ipaddress' => '192.168.0.1'
       }
     }
   end
